@@ -1,0 +1,109 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 0rem;
+    }
+    /* .about-containers {
+        flex-wrap: wrap;
+    } */
+    #project{
+        margin-top: 15rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+    #experience{
+        margin-top: 17rem;
+    }
+    
+    #about{
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
+
+    .about-containers{
+        margin-top: 0rem;
+    }
+
+    #profile, .section-container {
+        display: block;
+    }
+    .arrow {
+        display: none;
+    }
+    section, .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+
+    .section__pic-container {
+        width: 75px;
+        height: 75px;
+        margin: 0 auto 2rem;
+    }
+    .about-containers {
+        margin-top: 0;
+    }
+
+    #project{
+        margin-top: 15rem;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    #contact, footer {
+        height: 40vh;
+        /* margin-top: 15rem; */
+    }
+    #contact{
+        margin-top: 30rem;
+    }
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
+    }
+
+    article {
+        font-size: 1rem;
+    }
+
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+
+    .about-containers, .contact-info-upper-container, .btn-container {
+        flex-wrap: wrap;
+    }
+
+    .contact-info-container {
+        margin: 0;
+    }
+    .contact-info-container p, .nav-links, a {
+        font-size: 1rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .section-container {
+        width: auto;
+        height: 46vh;
+        justify-content: center;
+    }
+    
+}
+
+/* when screen size is lower than 1200 px desktop-nav will disppear */
+

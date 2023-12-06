@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            Vedant Kokane
+        </div>
+        <div class="nav-links">
+            <li>
+                <a href="#about"> About </a>
+            </li>
+            <li>
+                <a href="#experience"> Experience </a>
+            </li>
+            <li>
+                <a href="#projects"> Projects </a>
+            </li>
+            <li>
+                <a href="#contact"> Contact </a>
+            </li>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+            <div class="logo">
+                Vedant Kokane
+            </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li>
+                        <a href="#about"  onclick="toggleMenu()"> About </a>
+                    </li>
+                    <li>
+                        <a href="#education"  onclick="toggleMenu()"> Education </a>
+                    </li>
+                    <li>
+                        <a href="#projects"  onclick="toggleMenu()"> Projects </a>
+                    </li>
+                    <li>
+                        <a href="#contact"  onclick="toggleMenu()"> Contact </a>
+                    </li>
+                </div>
+            </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/VedantImage.png" alt="Vedant Kokane profile-pic">
+
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I am </p>
+            <h1 class="title"> Vedant Kokane</h1>
+            <p class="section__text__p2">Software Developer!</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download Resume</button>
+                <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div id="socials-container"> 
+                <img src="./assets/linkedin.png" alt="linkedin" 
+                class="icon" onclick="location.href='https://www.linkedin.com/in/vedantkokane/'">
+                <img src="./assets/github.png" alt="linkedin" 
+                class="icon" onclick="location.href='https://github.com/vedantkokane10'">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="title"> About Me</h1>
+        <div class="section-container">
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./assets/eduicon.png" alt="eduicon" class="icon">
+                            <h3>Undergraduate Education</h3>
+                            <p> <b>Pune Institute of Computer Technology</b> <br>  B.E Computer Engineering, 2021-2025 <br> CGPA - 8.315 </p>
+                        </div>
+                    </div>
+                <div class="text-container">
+                    <p align="center">I am a highly motivated and passionate pre-final year student at Pune Institute of Computer Technology (PICT), Pune. Over the course of my three-year journey in engineering, I've had the privilege of exploring various domains within the vast realm of technology. From iOS app development to diving into the complexities of machine learning and even venturing into the world of web development, my insatiable curiosity has led the way.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='#experience'">
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <p class="title"> Experience </p>
+        <p class="section__text__p1"> Tech Stack I've worked on </p>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/cppLogo.png" alt="expicon" class="icon">
+                            <div>
+                                <h3>C++</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/pythonLogo.png" alt="expicon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/javaLogo.png" alt="expicon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Basic + Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/swiftLogo.png" alt="expicon" class="icon">
+                            <div>
+                                <h3>Swift</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frameworks</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/flaskLogo.png" alt="expicon" class="icon">
+                            <div>
+                                <h3>Flask</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/swiftui2Logo.png" alt="expicon" class="icon">
+                            <div>
+                                <h3>SwiftUI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Databases</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/sqlLogo.png" alt="expicon" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/firebaseLogo.png" alt="expicon" class="icon">
+                            <div>
+                                <h3>FireBase</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='#projects'">
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects">
+        <p class="title">Projects</p>
+            <div class="project-details-container">
+                    <div class="about-containers">
+                        <div class="details-container2 color-container">
+                            <div class="article-container">
+                                <img src="./assets/psychehealth.png" alt="project1" class="project-img">
+                            </div>
+                            <h2 class="experience-sub-title project-title">PsycheHealth</h2>
+                            <div class="btn-container">
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/vedantkokane10/PsycheHealth'">
+                                    Github
+                                </button>
+                                <button class="btn btn-color-2 project-btn" onclick="openVideoPopup('https://www.youtube.com/embed/T3Ic1vT0iO8')">
+                                    Video
+                                </button>
+                            </div>
+                        </div>
+                        <div class="details-container2 color-container">
+                            <div class="article-container">
+                                <img src="./assets/cryptosift.png" alt="project1" class="project-img">
+                            </div>
+                            <h2 class="experience-sub-title project-title">CryptoSift</h2>
+                            <div class="btn-container">
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/vedantkokane10/PsycheHealth'">
+                                    Github
+                                </button>
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/vedantkokane10/PsycheHealth'">
+                                    Video
+                                </button>
+                            </div>
+                        </div>
+                        <div class="details-container2 color-container">
+                            <div class="article-container">
+                                <img src="./assets/todoLogo.png" alt="project1" class="project-img">
+                            </div>
+                            <h2 class="experience-sub-title project-title">To do list</h2>
+                            <div class="btn-container">
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/vedantkokane10/PsycheHealth'">
+                                    Github
+                                </button>
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/vedantkokane10/PsycheHealth'">
+                                    Video
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="videoModal">
+                <span id="closeButton" onclick="closeVideoPopup()">&times;</span>
+                <div id="videoContainer">
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='#contact'">
+    </section>
+
+    
+    <!-- Contact section -->
+    <section id="contact">
+        <p class="title">Contact Me</p>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <a href="mailto:kokanevedant@gmail.com">
+                    <img src="./assets/email.png" alt="emailicon" class="email-icon">
+                    <p>kokanevedant@gmail.com</p>
+                </a>
+            </div>
+        </div>
+        
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <a href="https://www.linkedin.com/in/vedantkokane/">
+                    <img src="./assets/linkedin.png" alt="emailicon" class="icon contact">
+                    <p>linkedin</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <div class="nav-links">
+                    <li>
+                        <a href="#about"> About </a>
+                    </li>
+                    <li>
+                        <a href="#experience"> Experience </a>
+                    </li>
+                    <li>
+                        <a href="#projects"> Projects </a>
+                    </li>
+                    <li>
+                        <a href="#contact"> Contact </a>
+                    </li>
+                </div>
+            </div>
+        </nav>
+        <p>Copyright @vedantkokane</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

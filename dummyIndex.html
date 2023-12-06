@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            Vedant Kokane
+        </div>
+        <div class="nav-links">
+            <li>
+                <a href="#about"> About </a>
+            </li>
+            <li>
+                <a href="#education"> Education </a>
+            </li>
+            <li>
+                <a href="#projects"> Projects </a>
+            </li>
+            <li>
+                <a href="#contact"> Contact </a>
+            </li>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+            <div class="logo">
+                Vedant Kokane
+            </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li>
+                        <a href="#about"  onclick="toggleMenu()"> About </a>
+                    </li>
+                    <li>
+                        <a href="#education"  onclick="toggleMenu()"> Education </a>
+                    </li>
+                    <li>
+                        <a href="#projects"  onclick="toggleMenu()"> Projects </a>
+                    </li>
+                    <li>
+                        <a href="#contact"  onclick="toggleMenu()"> Contact </a>
+                    </li>
+                </div>
+            </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Vedant Kokane profile-pic">
+
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I am </p>
+            <h1 class="title"> Vedant Kokane</h1>
+            <p class="section__text__p2">Software Developer!</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div id="socials-container"> 
+                <img src="./assets/linkedin.png" alt="linkedin" 
+                class="icon" onclick="location.href='https://www.linkedin.com/in/vedantkokane/'">
+                <img src="./assets/github.png" alt="linkedin" 
+                class="icon" onclick="location.href='https://github.com/vedantkokane10'">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <p class="section__text__p1"> Get to know more</p>
+        <h1 class="title"> About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="vedantprofilepicture" class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./assets/experience.png" alt="expicon" class="icon">
+                            <h3>Experience</h3>
+                            <p>Fresher</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assets/eduicon.png" alt="eduicon" class="icon">
+                            <h3>Education</h3>
+                            <p>B.E Computer Engineering <br> </p>
+                        </div>
+                    </div>
+                <div class="text-container">
+                    <p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./experience'">
+    </section>
+
+     <!-- Experience Section -->
+     <section id="experience">
+        <p class="title"> Experience </p>
+        <p class="section__text__p1"> Tech Stack I've worked on </p>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/cppLogo.png" alt="expicon" class="icon">
+                            <div>
+                                <h3>C++</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/pythonLogo.png" alt="expicon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/javaLogo.png" alt="expicon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Basic + Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/swiftLogo.png" alt="expicon" class="icon">
+                            <div>
+                                <h3>Swift</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frameworks</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/flaskLogo.png" alt="expicon" class="icon">
+                            <div>
+                                <h3>Flask</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/swiftui2Logo.png" alt="expicon" class="icon">
+                            <div>
+                                <h3>SwiftUI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Databases</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/sqlLogo.png" alt="expicon" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/firebaseLogo.png" alt="expicon" class="icon">
+                            <div>
+                                <h3>FireBase</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='#projects'">
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
