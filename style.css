@@ -345,8 +345,9 @@ article.icon{
 
 /* Project section */
 #projects{
+    margin-top: 200px;
     position: relative;
-    height: 100vh;
+    height: 140vh;
      /* increase this height to add more projects below */
 }
 
@@ -374,6 +375,7 @@ article.icon{
     display: flex;
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .project-article-container{
@@ -393,6 +395,7 @@ article.icon{
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
+    
 }
 
 
@@ -493,3 +496,83 @@ footer p{
 }
 
 
+.section__pic-container{
+    background-size: cover;
+    animation: profile__animate 8s ease-in-out infinite 1s;
+    /* box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%); */
+    justify-self: center;
+}
+
+
+@keyframes profile__animate {
+    0% {
+        border: 0 solid #444343;
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    5% {
+        border: 9px solid #b0b0b0;
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    45% {
+        border: 9px solid #b0b0b0;
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    95% {
+        border: 9px solid #b0b0b0;
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    100% {
+        border: 0 solid #b0b0b0;
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+
+.arrowExperience{
+    position: relative;
+    right: -75rem;
+    
+    bottom:1rem;
+}
+
+
+/* Additional changes */
+
+.project-details-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.details-container2 {
+    flex: 0 1 calc(33.33% - 2rem); /* Set width to 33.33% minus some margin */
+    margin: 0.1rem; /* Add some margin for spacing between cards */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+@media (max-width: 768px) {
+    .details-container2 {
+        flex: 0 1 calc(50% - 2rem); /* On smaller screens, show 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .details-container2 {
+        flex: 0 1 calc(100% - 2rem); /* On very small screens, show 1 card per row */
+    }
+}
+
+.project-article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
