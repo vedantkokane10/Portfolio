@@ -98,7 +98,7 @@
     }
 
     .section-container {
-        width: auto;
+        width: auto; 
         height: 46vh;
         justify-content: center;
     }
