@@ -576,3 +576,17 @@ footer p{
     gap: 2.5rem;
     justify-content: space-around;
 }
+
+
+.article-container article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.article-container-box{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap:10px
+}
