@@ -7,10 +7,10 @@ function toggleMenu(){
 
 
 function openVideoPopup(videoSrc) {
-    // Get the video modal
+    // geting the video  modal 
     var videoModal = document.getElementById("videoModal");
 
-    // Set the video source dynamically
+    // setting the video source dynamically
     var videoIframe = document.createElement("iframe");
     videoIframe.width = "600";
     videoIframe.height = "375";
@@ -18,15 +18,15 @@ function openVideoPopup(videoSrc) {
     videoIframe.frameBorder = "0";
     videoIframe.allowFullscreen = true;
 
-    // Append the iframe to the video container in the modal
+    // appending the iframe to the video container in  the modal
     document.getElementById("videoContainer").innerHTML = "";
     document.getElementById("videoContainer").appendChild(videoIframe);
 
-    // Display the modal
+    // modal display
     videoModal.style.display = "flex";
 }
 
 function closeVideoPopup() {
-    // Hide the modal
+    // Hiding the modal
     document.getElementById("videoModal").style.display = "none";
 }
