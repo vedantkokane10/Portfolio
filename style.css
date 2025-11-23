@@ -585,8 +585,12 @@ footer p{
 }
 
 .article-container-box{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap:10px
+    gap:10px */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
 }
